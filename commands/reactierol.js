@@ -9,26 +9,19 @@ module.exports = {
         const MitchelSMPROLE = message.guild.roles.cache.find(role => role.name === "Mitchel SMP");
         const Valorant = message.guild.roles.cache.find(role => role.name === "Valorant");
        
-        const raketje = ':poop:';
-        const valorantje = ':joy:';
-        const MitchelSMpje = ':slight_frown:';
-
-
-        let embed = new discord.MessageEmbed()   
-        .setColor('#3300AA') 
-        .setTitle('Kies hier je rol')
-        .setDescription('Geef een reactie op de spellen die je speelt. \n \n'
-            +`${raketje} voor Rocket League\n`
-            +`${valorantje} voor Valorant\n`
-            +`${MitchelSMpje} voor SMP`);
-
-        
+        const yellowTeamEmoji = ':poop:';
+        const blueTeamEmoji = 'YOUR_EMOJI';
+ 
+        let embed = new Discord.MessageEmbed()
+            .setColor('#e42643')
+            .setTitle('Choose a team to play on!')
+            .setDescription('Choosing a team will allow you to interact with your teammates!\n\n'
+                + `${yellowTeamEmoji} for yellow team\n`
+                + `${blueTeamEmoji} for blue team`);
+ 
         let messageEmbed = await message.channel.send(embed);
-        messageEmbed.react(message.guild.emojis.get('123456789012345678'))
-        .then(console.log)
-        .catch(console.error);;
-        messageEmbed.react(valorantje);
-        messageEmbed.react(MitchelSMpje);
+        messageEmbed.react(yellowTeamEmoji);
+        messageEmbed.react(blueTeamEmoji);
 
         client.on('messageReactionAdd', async (reaction, user) => {
 
