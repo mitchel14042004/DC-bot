@@ -10,9 +10,10 @@ module.exports = {
         const MitchelSMPROLE = message.guild.roles.cache.find(role => role.name === "Mitchel SMP");
         const Valorant = message.guild.roles.cache.find(role => role.name === "Valorant");
        
-        const raket = client.emojis.find(emoji => emoji.name === "raket");
-        const valorant = client.emojis.find(emoji => emoji.name === "valorant");
-        const MitchelSMp = client.emojis.find(emoji => emoji.name === "MitchelSMp");
+        const raket = ':poop:';
+        const valorant = ':eye:';
+        const MitchelSMp = ':banana:';
+
 
         let embed = new Discord.MessageEmbed()   
         .setColor('#3300AA') 
