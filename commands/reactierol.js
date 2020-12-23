@@ -2,9 +2,8 @@ module.exports = {
 
 
     name: 'reactierol',
+    description: "HALLO",
     async execute(message, args, discord, client){ 
-
-
         const channel = '789236214263840818'
         const RocketLeagueRol = message.guild.roles.cache.find(role => role.name === "Rocket League");
         const MitchelSMPROLE = message.guild.roles.cache.find(role => role.name === "Mitchel SMP");
@@ -25,7 +24,6 @@ module.exports = {
 
         
         let messageEmbed = await message.channel.send(embed);
-
         messageEmbed.react(raket);
         messageEmbed.react(valorant);
         messageEmbed.react(MitchelSMp);
