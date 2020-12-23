@@ -9,24 +9,24 @@ module.exports = {
         const MitchelSMPROLE = message.guild.roles.cache.find(role => role.name === "Mitchel SMP");
         const Valorant = message.guild.roles.cache.find(role => role.name === "Valorant");
        
-        const raket = ':poop:';
-        const valorant = ':joy:';
-        const MitchelSMp = ':slight_frown:';
+        const raketje = ':poop:';
+        const valorantje = ':joy:';
+        const MitchelSMpje = ':slight_frown:';
 
 
         let embed = new discord.MessageEmbed()   
         .setColor('#3300AA') 
         .setTitle('Kies hier je rol')
         .setDescription('Geef een reactie op de spellen die je speelt. \n \n'
-            +`${raket} voor Rocket League`
-            +`${valorant} voor Valorant\n`
-            +`${MitchelSMp} voor SMP`);
+            +`${raketje} voor Rocket League\n`
+            +`${valorantje} voor Valorant\n`
+            +`${MitchelSMpje} voor SMP`);
 
         
         let messageEmbed = await message.channel.send(embed);
-        messageEmbed.react(raket);
-        messageEmbed.react(valorant);
-        messageEmbed.react(MitchelSMp);
+        messageEmbed.react(raketje);
+        messageEmbed.react(valorantje);
+        messageEmbed.react(MitchelSMpje);
 
         client.on('messageReactionAdd', async (reaction, user) => {
 
