@@ -10,9 +10,9 @@ module.exports = {
         const Valorant = message.guild.roles.cache.find(role => role.name === "Valorant");
        
         const yellowTeamEmoji = ':poop:';
-        const blueTeamEmoji = 'YOUR_EMOJI';
+        const blueTeamEmoji = ':poop:';
  
-        let embed = new Discord.MessageEmbed()
+        let embed = new discord.MessageEmbed()
             .setColor('#e42643')
             .setTitle('Choose a team to play on!')
             .setDescription('Choosing a team will allow you to interact with your teammates!\n\n'
