@@ -2,7 +2,7 @@ module.exports = {
 
 
     name: 'reactierol',
-    async execute(message, args, Discord, client){ 
+    async execute(message, args, discord, client){ 
 
 
         const channel = '789236214263840818'
@@ -15,7 +15,7 @@ module.exports = {
         const MitchelSMp = '\:banana:';
 
 
-        let embed = new Discord.MessageEmbed()   
+        let embed = new discord.MessageEmbed()   
         .setColor('#3300AA') 
         .setTitle('Kies hier je rol')
         .setDescription('Geef een reactie op de spellen die je speelt. \n \n'
