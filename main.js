@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const discord = require('discord.js');
 
-const client = new discord.Client();
+const client = new discord.Client({partials: ["MESSAGE", "CHANNEL", "REACTION"]});
 
 const prefix = '-';
 
@@ -59,6 +59,8 @@ client.on('message', message =>{
       client.commands.get('kick').execute(message,args)
     }else if(command == 'ban'){ 
       client.commands.get('ban').execute(message,args)
+    }else if(command == 'reactierol'){
+        client.commands.get('reactierol').execute(message, args, Discord, client);
     }
 
 
