@@ -10,9 +10,9 @@ module.exports = {
         const MitchelSMPROLE = message.guild.roles.cache.find(role => role.name === "Mitchel SMP");
         const Valorant = message.guild.roles.cache.find(role => role.name === "Valorant");
        
-        const raket = ':poop:';
-        const valorant = ':eye:';
-        const MitchelSMp = ':banana:';
+        const raket = '\:poop:';
+        const valorant = '\:eye:';
+        const MitchelSMp = '\:banana:';
 
 
         let embed = new Discord.MessageEmbed()   
