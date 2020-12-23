@@ -60,7 +60,7 @@ client.on('message', message =>{
     }else if(command == 'ban'){ 
       client.commands.get('ban').execute(message,args)
     }else if(command == 'reactierol'){
-        client.commands.get('reactierol').execute(message, args, Discord, client);
+        client.commands.get('reactierol').execute(message, args, discord, client);
     }
 
 
