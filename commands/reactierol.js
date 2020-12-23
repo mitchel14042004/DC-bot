@@ -24,7 +24,9 @@ module.exports = {
 
         
         let messageEmbed = await message.channel.send(embed);
-        messageEmbed.react(raketje);
+        messageEmbed.react(message.guild.emojis.get('123456789012345678'))
+        .then(console.log)
+        .catch(console.error);;
         messageEmbed.react(valorantje);
         messageEmbed.react(MitchelSMpje);
 
